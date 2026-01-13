@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Force WordPress REST API
+RewriteRule ^wp-json/?(.*)$ index.php?rest_route=/$1 [L,QSA]
+
+# Standard WordPress rules
+RewriteBase /wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpress/index.php [L]
