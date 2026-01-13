@@ -59,6 +59,8 @@ define( 'NONCE_SALT',       'tQN5Jlsu3mp9%h>^ZNdNwZ20RMDBw6V|#nTOf]Cc<mCX74}zrqL
 define('JWT_AUTH_SECRET_KEY', '1234567890azerty');
 define('JWT_AUTH_CORS_ENABLE', true);
 define('APP_WEBHOOK_SECRET', 'azertyuiop1234567890');
+define('STRIPE_SECRET_KEY', 'sk_test_xxxxx');
+define('STRIPE_WEBHOOK_SECRET', 'whsec_xxxxx');
 
 
 
